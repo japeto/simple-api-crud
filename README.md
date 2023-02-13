@@ -8,15 +8,18 @@ The user REST API allows System Administrators to do the following
 * Update users
 * Delete users
 
+### Before of start server
+
+1. Edit config.py file add the SQLALCHEMY_DATABASE_URI to postgres, Mysql and so forth.
+2. Create a env using $> python -m venv env
+3. Activate env wtih  $> source env/bin/activate
+4. Install dependecies with $> pip install -r requirements.txt
+
 ## How to start server
 
 ```bash
 python app.py
 ```
-
-### Before of start server
-
-Edit config.py file add the SQLALCHEMY_DATABASE_URI to postgres, Mysql and so forth.
 
 ## CRUD Api for Users
 
